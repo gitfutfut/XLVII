@@ -1,0 +1,44 @@
+body {
+  background: #fff;
+  font-family: 'Oswald';
+  margin:0px;
+  padding:0px;
+  overflow-x:hidden; 
+  overflow-y:scroll; 
+}
+.parallax-container {
+  text-align: center;
+  top: 5em;
+  padding-bottom: 20em;
+  position: absolute;
+  overflow: visible;
+  width: 100%;
+  height: 100%;
+}
+.parallax-layer {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+  .layer-0 {
+    top: auto;
+    z-index: 1;
+    background-image: url('ciel.png');
+  }
+  .layer-1 {
+    top: auto;
+    z-index: 2;
+    background-image: url('collines.png');
+  }
+  .layer-2 {
+    top: auto;
+    z-index: 3;
+    background-image: url('plan.png');
+  }
+.fixed-ratio-resize { /* basic responsive img */
+	max-width: 90%;
+	height: auto;
